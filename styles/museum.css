@@ -1,0 +1,102 @@
+.article{
+  padding-left: 30%;
+  padding-right: 30%;
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 18em;
+}
+
+.date{
+  font-weight: normal;
+}
+
+.title{
+  font-family: helvetica;
+  font-size: 1.5em;
+}
+
+.fixed{
+  position: sticky;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  top: 0em;
+  background-color: white;
+}
+
+.scroll{
+  scroll-snap-align: start;
+  padding-bottom: 15em;
+}
+
+h1{
+	font-family: helvetica;
+	font-size: 2em;
+	/*letter-spacing: 0.2em;*/
+	line-height: 0.6em;
+	font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0em;
+}
+
+p{
+	font-family: arial;
+	line-height: 1.5em;
+	padding: 0.3em;
+	text-indent: 0.5em;
+  font-size: 1.2em;
+
+}
+
+.credits{
+	font-size: 0.7em;
+	text-indent: 0em;
+	text-align: right;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: black;
+}
+
+progress::-moz-progress-bar {
+  background-color: black;
+}
+
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+
+  /* Dimensions */
+  width: 100%;
+  height: 6px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: red;
+}
+
+/*.underline{
+	border-bottom: 2px solid;
+}*/
+
+/*.overline{
+	border-top: 2px solid;
+}*/
