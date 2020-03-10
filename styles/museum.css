@@ -48,55 +48,47 @@ p{
 
 }
 
+.num{ 
+  text-decoration: none;
+  color:  black;
+}
+
+.num:hover{
+  color:grey;
+}
+
 .credits{
 	font-size: 0.7em;
 	text-indent: 0em;
 	text-align: right;
 }
 
-progress::-webkit-progress-bar {
-  background-color: transparent;
+#lastblock{
+  padding-bottom:10em;
 }
 
-progress::-webkit-progress-value {
-  background-color: black;
+.ref{
+ display: none;
+ top: 200px;
+ position: fixed;
+ background-color: white;
+ color: grey;
+ z-index: 2;
 }
 
-progress::-moz-progress-bar {
-  background-color: black;
+.num:hover + .ref{
+  display:inline-block;
 }
 
-
-progress {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-
-  /* Dimensions */
-  width: 100%;
-  height: 6px;
-
-  /* Reset the appearance */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
-
-  /* Progress bar container for Firefox/IE10+ */
-  background-color: transparent;
-
-  /* Progress bar value for IE10+ */
-  color: red;
+img{
+  width: 50%;
 }
 
-/*.underline{
-	border-bottom: 2px solid;
-}*/
+a{
+  text-decoration: none;
+  color: black;
+}
 
-/*.overline{
-	border-top: 2px solid;
-}*/
+a:hover{
+  color:grey;
+}
