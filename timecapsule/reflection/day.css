@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+}
+.container{
+	width: 705px; /* Without a width `auto` won’t work */
+  margin: auto;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block{
+	display: inline;
+	width:350px;
+	height: 255.83px;
+}
+
+p{
+	margin-bottom: 5px;
+	font-family: arial;
+}
+
+
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover{
+  color:black;
+}
+
+.credits{
+	font-size: 0.7em;
+	text-indent: 0em;
+	text-align: right;
+}

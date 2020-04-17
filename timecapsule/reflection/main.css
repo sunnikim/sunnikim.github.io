@@ -1,0 +1,23 @@
+.article{
+	margin: 5em;
+	padding: 15em;
+	padding-top: 5em;
+	outline-color: coral;
+	outline: 5px dotted green;
+	background-image: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+	border-radius: 25px;
+	column-count: 2;
+}
+
+h1{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 3em;
+	text-decoration-line: underline;
+	text-shadow: 2px 2px #ff0000;
+}
+
+p{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	line-height: 1.5em;
+	text-indent: 1em;
+}
