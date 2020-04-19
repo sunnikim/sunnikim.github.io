@@ -36,3 +36,28 @@ a:hover{
 	text-indent: 0em;
 	text-align: right;
 }
+
+@media(max-width: 700px) {
+
+	.block{
+		display: block;
+		width:350px;
+		height: 255.83px;
+		margin:auto;
+	}
+
+	p{
+		margin:10px;
+	}
+
+
+	.container{
+		width: 100vw; /* Without a width `auto` won’t work */
+	  margin: auto;
+	    position: absolute;
+	  left: 0%;
+	  top: 0%;
+	  transform: translate(0%, 0%);
+	}
+
+}

@@ -5,20 +5,11 @@
 a{
   color: grey;
   text-decoration: none;
-  font-family: arial;
-  margin-bottom: 5px;
-
 }
 
 a:hover{
   color:black;
 }
-
-#back{
-  position: absolute;
-  top: 7px;
-}
-
 
 .article{
 margin: 0 auto;
@@ -43,10 +34,9 @@ p{
 	font-family: arial;
 	line-height: 1.5em;
 	padding: 0.3em;
-	text-indent: 0.5em;
+
 
 }
-
 
 .p1{
 	font-size: 1.5em;
@@ -102,15 +92,11 @@ progress {
 @media(max-width: 900px) {
 
       h1{
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
       .article{
         max-width: 20em;
-      }
-
-      #back{
-        position: relative;
       }
 
 }
