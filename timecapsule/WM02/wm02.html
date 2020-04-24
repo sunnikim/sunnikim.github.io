@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://gemcopeland.github.io/html-template.html -->
+<html>
+
+	<head>
+        <title>WM 01</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- a container for metadata -->
+        <!--charset: character encoding capable of encoding all characters on the web  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
+        <title></title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
+        <meta name="description" content=""><!--keywords/snippet for search engines-->
+        <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+
+        <link rel="stylesheet" href="main2.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+        <script>
+        $(document).on('ready', function() {
+          var winHeight = $(window).height(),
+          docHeight = $(document).height(),
+          progressBar = $('progress'),
+          max, value;
+
+          /* Set the max scrollable area */
+          max = docHeight - winHeight;
+          progressBar.attr('max', max);
+
+          $(document).on('scroll', function(){
+            value = $(window).scrollTop();
+            progressBar.attr('value', value);
+          });
+        });
+        </script>
+        <a id="top"></a>
+    </head>
+
+
+    <body><!--all the contents of an HTML document goes here-->
+        <progress value="0"></progress>
+        <div class="article">
+            <a href="../index.html" id="back">back to start</a>
+            <h1>
+               Broken System
+            </h1>
+
+            <p class="p1">How much carbon do you consume?</p>
+
+            <p>
+               Our group’s provocation is “how much carbon do you consume?” I am most interested in the word ‘consume’, because to me climate change seems to be a deeply economic problem. Of course there are social, cultural and political aspects to the issue, but for me they arise from the root of an economic model, Capitalism. 
+            </p>
+
+            <p>
+            The simplest model of any free market economy can be drawn up with a demand curve and a supply curve. By allowing the producers and consumers of our economy decide at what price and what quantity goods and services should be made, the free market forces supposedly allocate our resources efficiently. 
+            </p>
+            <div class="image">
+            <img src="freemarket.jpg">
+            </div>
+
+            <p>
+            Yet, the agents of these markets, corporate producers and individual consumers, aren’t entirely rational actors. Producers distribute defected products to save on cost of a recall. Bankers sell risky mortgages that cripple the economy. We spend a lot of money of on goods we don’t need on the promise of a better life. The market is in the end driven by human actors, and humans are imperfect. Especially when they are incentivised by the economic model to pursue profits. 
+            </p>
+            <div class="image">
+            <img src="marketfailure.jpg">
+            </div>
+            <p class="p1">
+            The current economic system has altered our culture and society, to seek short term profits, to act individualistically and to consume more. 
+            </p>
+
+            <p>
+            This idea that the world is unfair, its cruel and unforgiving, may have some truth to it but to me it seems more and more like a lie we tell ourselves to cope with a broken system. This isn’t how the world needs to be and this isn’t how the world will be forever. 
+            </p>
+
+            <a href="article.html">read more of my rambling</a><br><br>
+           
+
+<a href="#top">back to top</a><br>
+<a href="../index.html">back to start</a>
+            <p class="credits">
+                Sun Min Kim | CSM | BAGCD | 2020
+            </p>
+        </div>
+	</body>
+
+</html>

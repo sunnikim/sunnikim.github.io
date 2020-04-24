@@ -1,0 +1,134 @@
+*{
+  scroll-behavior: smooth;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+  font-family: arial;
+  margin-bottom: 5px;
+
+}
+
+a:hover{
+  color:black;
+}
+
+#back{
+  position: absolute;
+  top: 7px;
+}
+
+
+.article{
+margin: 0 auto;
+  max-width: 40em;
+}
+
+h1{
+	font-family: georgia;
+	font-size: 3em;
+	letter-spacing: 0.9em;
+	line-height: 1.5em;
+	font-weight: bold;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+h2{
+  font-family: georgia;
+  font-size: 1.27em;
+  letter-spacing: 0.9em;
+  line-height: 1.5em;
+  font-weight: bold;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+p{
+	font-family: arial;
+	line-height: 1.5em;
+	padding: 0.3em;
+	text-indent: 0.5em;
+
+}
+
+.p1{
+	font-size: 1.5em;
+	padding:0;
+	text-indent: 0em;
+}
+
+img{
+  width:100%;
+}
+
+.image{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.credits{
+	font-size: 0.7em;
+	text-indent: 0em;
+	text-align: right;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: black;
+}
+
+progress::-moz-progress-bar {
+  background-color: black;
+}
+
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+
+  /* Dimensions */
+  width: 100%;
+  height: 6px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: red;
+}
+
+@media(max-width: 900px) {
+
+      h1{
+        font-size: 1.5em;
+      }
+
+      .article{
+        max-width: 20em;
+      }
+
+      #back{
+        position: relative;
+      }
+
+}
