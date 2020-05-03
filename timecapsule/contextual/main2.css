@@ -1,0 +1,149 @@
+*{
+  scroll-behavior: smooth;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+  font-family: arial;
+  margin-bottom: 5px;
+
+}
+
+a:hover{
+  color:black;
+}
+
+#back{
+  position: absolute;
+  top: 7px;
+}
+
+
+.article{
+margin: 0 auto;
+  max-width: 40em;
+}
+
+h1{
+	font-family:Palatino;
+	font-size: 3em;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+	font-weight: bold;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+h2{
+  font-family: palatino;
+  color: grey;
+}
+
+h3{
+  font-family: arial;
+  font-size: 20px;
+}
+
+
+p{
+	font-family: arial;
+	line-height: 1.5em;
+	padding: 0.3em;
+	text-indent: 0.5em;
+}
+
+sup{
+   vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+figure img{
+  width:80%; margin: 0 auto; display: block;
+}
+
+figcaption{
+  text-align: center;
+  line-height: 40px;
+  font-family: palatino;
+  color: grey;
+}
+
+.p1{
+	font-size: 1.5em;
+	padding:0;
+	text-indent: 0em;
+}
+
+.credits{
+	font-size: 0.7em;
+	text-indent: 0em;
+	text-align: right;
+}
+
+.article-footnote-side{position:fixed;width:15%;top:50%;-webkit-transform:translateY(-70%);-moz-transform:translateY(-70%);-o-transform:translateY(-70%);-ms-transform:translateY(-70%);transform:translateY(-70%);right:8%;font:small 'Maria Pro',Helvetica,Arial,sans-serif;opacity:1;-ms-filter:none;filter:none;-webkit-transition:0.2s ease;-moz-transition:0.2s ease;-o-transition:0.2s ease;-ms-transition:0.2s ease;transition:0.2s ease;line-height:16px;-o-text-overflow:ellipsis;text-overflow:ellipsis;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}
+.article-footnote-side a{word-wrap:break-word}
+.article-footnote-side.side-loaded{opacity:1 false;-ms-filter:none;filter:none}
+.footnotes{margin-top:30px;line-height:16px;}
+.footnotes hr{display:none}
+.footnotes ol{list-style-type:decimal;display:inline;font-size:12px;vertical-align:top;margin:0;padding:0}
+.footnotes a{word-wrap:break-word}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: black;
+}
+
+progress::-moz-progress-bar {
+  background-color: black;
+}
+
+
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+
+  /* Dimensions */
+  width: 100%;
+  height: 6px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: red;
+}
+
+@media(max-width: 900px) {
+
+      h1{
+        font-size: 1.5em;
+      }
+
+      .article{
+        max-width: 20em;
+      }
+
+      #back{
+        position: relative;
+      }
+
+}
