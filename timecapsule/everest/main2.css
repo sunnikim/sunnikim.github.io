@@ -23,7 +23,12 @@ hr {
   border: none;
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #ffffff;
-    }
+}
+
+#back{
+  margin-left: 10px;
+  color: #B7B7B7;
+}
 
 /*logo*/
 
@@ -47,17 +52,17 @@ hr {
 .logo{ 
   width: 200px;
   display: inline-block;
- }
+}
 
- .logo img{
+.logo img{
   width: 100%;
- }
+}
 
- .logoright{
+.logoright{
   margin-left: 5px;
   width: 70%;
   display: inline-block;
- }
+}
 
 
 
@@ -84,7 +89,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-/*  background-color: #111;*/
+  /*  background-color: #111;*/
 }
 
 
@@ -116,7 +121,7 @@ a:hover{
 
 
 .article{
-margin: 0 auto;
+  margin: 0 auto;
   max-width: 100%;
 }
 
@@ -143,8 +148,8 @@ p{
 }
 
 .main{
-width: 70%;
-display: inline-block;
+  width: 70%;
+  display: inline-block;
 }
 
 .main p{
@@ -161,8 +166,25 @@ display: inline-block;
   letter-spacing: 1px;
 }
 
+.diagram{
+  width: 40%;
+  display: inline-block;
+  padding: 15px;
+}
+
+.diagram img{
+  width: 100%;
+  display: inline-block;
+}
+
+#timer{
+  color: yellow;
+  font-size: 60px;
+  text-shadow: none;
+}
+
 .sidebar{
-float: right;
+  float: right;
 }
 
 .sidebar a{
@@ -170,14 +192,21 @@ float: right;
   text-decoration: underline;
 }
 
+.block p{
+  padding: 20px;
+  text-indent: 0px;
+}
+
 .block{
   width: 200px;
+
 }
 
 .block img{
 
   width:70%;
   padding: 20px;
+  margin:auto;
 }
 
 
