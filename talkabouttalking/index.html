@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://gemcopeland.github.io/html-template.html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- a container for metadata -->
+        <!--charset: character encoding capable of encoding all characters on the web  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
+        <title>let's talk about talking</title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
+        <meta name="description" content=""><!--keywords/snippet for search engines-->
+        <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="animation.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="fade.js"></script> -->
+        <!-- p5.js -->
+        <script src="p5.js"></script>
+        <script src="p5.sound.min.js"></script>
+    </head>
+    <body>
+        <div id="background" style="background-color:#B8D6F4;"></div>
+    
+        <div class="container">
+            <div class="middle">let's talk about talking</div>
+        	<div class="block">
+
+         <!--        <p class="leftblock"></p>
+                <p class="rightblock"></p>   -->
+
+
+               <p class="leftblock" id="fade"> hi! how are you?  </p>
+               <p class="rightblock" id="finehide"> fine </p>
+               <p class="rightblock" id="goodhide"> good </p> 
+               <p class="rightblock" id="greathide"> great! </p>  
+               <p class="rightblock" id="howhide"> how about you? </p>   
+               
+
+
+
+        	</div>
+           
+            <div class="response">
+                <div class="dropupcontainer">
+                    <span class="blink">|</span>
+                    <div class="dropupcontent">
+                        <a href="1.html" id="fine">fine</a>
+                        <a href="2.html" id="good">good</a>
+                        <a href="3.html" id="great">great!</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+                setTimeout(function(){
+                        $('#fade').fadeIn("15");
+                    }, 1500);
+
+
+                // $( "#fine" ).click(function() {
+                //    $('#finehide').fadeIn("15");
+                //    setTimeout(function(){
+                //         $('#howhide').fadeIn("15");
+                //     }, 1000);
+                //    return false; 
+                // });
+
+                // $( "#good" ).click(function() {
+                //    $('#goodhide').fadeIn("15");
+                //    setTimeout(function(){
+                //         $('#howhide').fadeIn("15");
+                //     }, 1000);
+                //    return false; 
+                // });
+
+                // $( "#great" ).click(function() {
+                //    $('#greathide').fadeIn("15");
+                //    setTimeout(function(){
+                //         $('#howhide').fadeIn("15");
+                //     }, 1000);
+                //    return false; 
+                // });
+
+                $("#fine").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#finehide').fadeIn("15");
+                       setTimeout(function(){
+                            $('#howhide').fadeIn("15"); 
+                    }, 1000);
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 3000);
+                });
+
+                $("#good").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#goodhide').fadeIn("15");
+                       setTimeout(function(){
+                            $('#howhide').fadeIn("15"); 
+                    }, 1000);
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 3000);
+                });
+
+                $("#great").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#greathide').fadeIn("15");
+                       setTimeout(function(){
+                            $('#howhide').fadeIn("15"); 
+                    }, 1000);
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 3000);
+                });
+
+
+
+
+
+            </script>
+           
+        </div>
+
+       
+
+    </body>
+</html>

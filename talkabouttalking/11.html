@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://gemcopeland.github.io/html-template.html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- a container for metadata -->
+        <!--charset: character encoding capable of encoding all characters on the web  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
+        <title>let's talk about talking</title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
+        <meta name="description" content=""><!--keywords/snippet for search engines-->
+        <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="animation.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="fade.js"></script>
+        <script src="scroll.js"></script>
+        <!-- p5.js -->
+        <script src="p5.js"></script>
+        <script src="p5.sound.min.js"></script>
+    </head>
+    <body>
+        <div id="background" style="background-color:#B8D6F4;"></div>
+    
+        <div class="container">
+            <div class="middle">let's talk about talking</div>
+        	<div class="block" id="scroll">
+
+         <!--        <p class="leftblock"></p>
+                <p class="rightblock"></p>   -->
+
+
+               <p class="leftblock"> hi! how are you?  </p>
+               <p class="rightblock"> fine </p>
+               <p class="rightblock"> how about you? </p>
+               <p class="leftblock"> good! thanks for asking   </p>
+               <p class="leftblock"> so  </p>
+               <p class="leftblock"> do you want to talk about talking?  </p>
+               <p class="rightblock"> yea sure! </p>
+               <p class="leftblock" id="fade"> great! </p>
+               <p class="leftblock" id="fade2"> When was the last time you had a meaningful conversation? </p>
+               <p class="rightblock" id="neverhide"> never had one </p>
+               <p class="rightblock" id="recenthide"> recently </p>
+               <p class="rightblock" id="itshide"> it's been a while </p>
+
+
+
+        	</div>
+           
+            <div class="response">
+                <div class="dropupcontainer">
+                    <span class="blink">|</span>
+                    <div class="dropupcontent">
+                        <a href="111.html" id="never">never had one</a>
+                        <a href="112.html" id="recent">recently</a>
+                        <a href="113.html" id="its">it's been a while</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+                 setTimeout(function(){
+                        $('#fade').fadeIn("15");
+                    }, 1500);
+                setTimeout(function(){
+                        $('#fade2').fadeIn("15");
+                    }, 3000);
+
+                $("#never").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#neverhide').fadeIn("15");
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 1000);
+                });
+
+                $("#revent").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#reventhide').fadeIn("15");
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 1000);
+                });
+
+                $("#its").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#itshide').fadeIn("15");
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 1000);
+                });
+
+                // $("#great").click(function(e) {
+                //     e.preventDefault();
+                //     var href = $(this).attr('href');
+                //     $('#greathide').fadeIn("15");
+                //        setTimeout(function(){
+                //             $('#howhide').fadeIn("15"); 
+                //     }, 1000);
+                //        setTimeout(function(){
+                //            window.location = href;  
+                //     }, 3000);
+                // });
+
+
+
+
+
+            </script>
+           
+        </div>
+
+       
+
+    </body>
+</html>
