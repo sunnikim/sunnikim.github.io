@@ -44,6 +44,7 @@
                <p class="rightblock"> never had one </p>
                <p class="leftblock" id="fade"> I think its important to have meaningful conversations </p>
                <p class="leftblock" id="fade2"> do you think you're a good conversation partner?  </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
                <p class="rightblock" id="yeahide"> yea I'd say so </p>
                <p class="rightblock" id="nothide"> not really </p>
 
@@ -54,7 +55,7 @@
                 <div class="dropupcontainer">
                     <span class="blink">|</span>
                     <div class="dropupcontent">
-                        <a href="1131.html" id="yea">yea I'd say so</a>
+                        <a href="1111.html" id="yea">yea I'd say so</a>
                         <a href="1132.html" id="not">not really</a>
                     </div>
 
@@ -68,6 +69,7 @@
                     }, 1500);
                 setTimeout(function(){
                         $('#fade2').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
                     }, 3000);
 
                 $("#yea").click(function(e) {

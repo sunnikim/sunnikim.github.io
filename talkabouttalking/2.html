@@ -37,6 +37,7 @@
                <p class="leftblock" id="fade"> good! thanks for asking   </p>
                <p class="leftblock" id="fade2"> so  </p>
                <p class="leftblock" id="fade3"> do you want to talk about talking?  </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
                <p class="rightblock" id="yeahide"> yea sure! </p>
                <p class="rightblock" id="nothide"> not really... </p>
 
@@ -62,6 +63,7 @@
                     }, 1500);
                 setTimeout(function(){
                         $('#fade2').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
                     }, 3000);
 
                 $("#yea").click(function(e) {

@@ -47,6 +47,7 @@
                <p class="rightblock"> not really </p>
                <p class="leftblock" id="fade"> yea, me neither  </p>
                <p class="leftblock" id="fade2"> do you ever rehearse what you're going to say so much that you forget to listen to the other person? </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
                <p class="rightblock" id="onehide">no</p>
                <p class="rightblock" id="twohide">sometimes</p>
                <p class="rightblock" id="threehide">all the time</p>
@@ -73,6 +74,7 @@
                     }, 1500);
                 setTimeout(function(){
                         $('#fade2').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
                     }, 5000);
 
                 $("#one").click(function(e) {

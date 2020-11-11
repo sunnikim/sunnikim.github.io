@@ -48,8 +48,9 @@
                <p class="leftblock"> yea, me neither  </p>
                <p class="leftblock"> do you ever rehearse what you're going to say so much that you forget to listen to the other person? </p>
                <p class="rightblock">no</p>
-               <p class="leftblock" id="fade"> well, that happens to me a lot.  </p>
-               <p class="leftblock" id="fade2"> but I realised that if I just listen for the sake of listening, rather than listen for the sake of replying, my responses become spontaneous and more genuine.   </p>
+               <p class="leftblock" id="fade"> well, that happens to me a lot  </p>
+               <p class="leftblock" id="fade2"> but I realised that if I just listen for the sake of listening, rather than listen for the sake of replying, my responses become spontaneous and more genuine  </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
                <p class="rightblock" id="onehide">listening for the sake of listening?</p>
               
 
@@ -60,7 +61,7 @@
                 <div class="dropupcontainer">
                     <span class="blink">|</span>
                     <div class="dropupcontent">
-                        <a href="113231.html" id="one">listening for the sake of listening?</a>
+                        <a href="113211.html" id="one">listening for the sake of listening?</a>
                     </div>
 
                 </div>
@@ -73,6 +74,7 @@
                     }, 2000);
                 setTimeout(function(){
                         $('#fade2').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
                     }, 6000);
 
                 $("#one").click(function(e) {

@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="fade.js"></script>
+        <!-- <script src="fade.js"></script> -->
         <!-- p5.js -->
         <script src="p5.js"></script>
         <script src="p5.sound.min.js"></script>
@@ -37,6 +37,7 @@
                <p class="leftblock" id="fade"> good! thanks for asking   </p>
                <p class="leftblock" id="fade2"> so  </p>
                <p class="leftblock" id="fade3"> do you want to talk about talking?  </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
                <p class="rightblock" id="yeahide"> yea sure! </p>
                <p class="rightblock" id="nothide"> not really... </p>
 
@@ -63,6 +64,10 @@
                 setTimeout(function(){
                         $('#fade2').fadeIn("15");
                     }, 3000);
+                setTimeout(function(){
+                        $('#fade3').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
+                    }, 4500);
 
                 $("#yea").click(function(e) {
                     e.preventDefault();

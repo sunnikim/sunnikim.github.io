@@ -30,8 +30,9 @@
          <!--        <p class="leftblock"></p>
                 <p class="rightblock"></p>   -->
 
-
+                
                <p class="leftblock" id="fade"> hi! how are you?  </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
                <p class="rightblock" id="finehide"> fine </p>
                <p class="rightblock" id="goodhide"> good </p> 
                <p class="rightblock" id="greathide"> great! </p>  
@@ -58,6 +59,7 @@
 
                 setTimeout(function(){
                         $('#fade').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
                     }, 1500);
 
 

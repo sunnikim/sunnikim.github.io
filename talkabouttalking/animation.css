@@ -16,9 +16,24 @@
   }
 }
 
+.loading{
+animation: fadein 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes fadein {
+  0%   {opacity: 0;}
+  25%  {opacity: 1;}
+  50%  {opacity: 0;}
+  75%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
 #fade,#fade2,#fade3,#fade4,#fade5,#fade6,#fade7,#fade8{
 	display: none;	
 }
+
+
 
 #finehide{
 	display: none;
