@@ -1,99 +1,69 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://gemcopeland.github.io/html-template.html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- a container for metadata -->
+        <!--charset: character encoding capable of encoding all characters on the web  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
+        <title></title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
+        <meta name="description" content=""><!--keywords/snippet for search engines-->
+        <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- p5.js -->
+        <script src="p5.js"></script>
+        <script src="p5.sound.min.js"></script>
+    </head>
+    <body>
+    
+        <div class="container">
+            <a class="middle">sunny kim design</a>
+            <div class="nav">
+                <a target="frame" href="stars/index.html"><img class="icon" src="img/star.svg"></a>
+                <a target="frame" href="rain/index.html"><img class="icon" src="img/umbrella.svg"></a>
+                <a target="frame" href="clouds/index.html"><img class="icon" src="img/cloud.svg"></a>
+                
+                <div class="mute"></div>
+            </div>
+        	<div class="block">
+                
+                <div id="hide">
+        		  <button id="start"> Ah, finally some peace and quiet. </button>
+                </div>
+        	</div>
+           <!--  <div class="stars"> -->
+<!-- 
+                    <img id="virgo" src="constellations/virgo/virgo.svg"
+                         onmouseover="this.src='constellations/virgo/virgo2.svg';"
+                         onmouseout="this.src='constellations/virgo/virgo.svg';"> -->
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Sunny</title>
-		<meta name="description" content="this is my portfolio">
-		<meta name="author" content="Sunny">
-		<meta name="keywords" content="design">
-		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-		<link rel="stylesheet" href="styles/main.css">
-	</head>
+                       <!--  <div class="virgobackground"></div> -->
+            
+<!--                 <span><img src="stars1.png"></span>
+                <span><img src="stars2.png"></span>
+                <span><img src="stars1.png"></span>
+                <span><img src="stars2.png"></span> -->
+            <!-- </div> -->
 
-	<body>
+            <iframe src="rain/index.html" name="frame"></iframe>
+        </div>
 
-			<header>
+        <script type="text/javascript">
+        $("#start").click(function(){
+          $("#hide").fadeOut(1000);
+          $(".stars").fadeIn(2000);
+          $('#audio').trigger('play');
+        });
+        </script>
 
-			</header>
-		
-			<aside>
-				<img src="assests/logo.png">
-				<h1>Sunny Kim</h1>
-				<h3>me website :)</h3>
-				<nav>
-					<ul>
-						<li>
-							<a href="about.html" target="iframe_a">about</a>
-						</li>
-						<li>
-							<p>professional work</p>
-						</li>
-						<li>
-							<a href="pseudos.html" target="iframe_a">pseudos</a>
-						</li>
-						<li>
-							<a href="guylaroche.html" target="iframe_a">guy laroche</a>
-						</li>
-						<li>
-							<a href="cambridge.html" target="iframe_a">cambridge</a>
-						</li>
-						<li>
-							<p>central saint martin's</p>
-						</li>
-						<li>
-							<a href="museum.html">museum</a>
-						</li>
-						<li>
-							<a href="loneliness.html" target="iframe_a">loneliness</a>
-						</li>
-						<li>
-							<a href="index.html" target="iframe_a">classroom</a>
-						</li>
-						<li>
-							<a href="404/index.html" target="iframe_a">404pagenotfound</a>
-						</li>
-						<li>
-							<a href="animation.html" target="iframe_a">animations</a>
-						</li>
-						<li>
-							<a href="prints.html" target="iframe_a">prints</a>
-						</li>
-						<li>
-							<a href="bookcover.html" target="iframe_a">bookcover</a>
-						</li>
-						<li>
-							<a href="visible.html" target="iframe_a">makinginvisiblevisible</a>
-						</li>
-						<li>
-							<a href="100songs/index2.html" target="iframe_a">100songs</a>
-						</li>
-						<li>
-							<a href="flat.html" target="iframe_a">flatness of reality</a>
-						</li>
-						<li>
-							<p>personal</p>
-						</li>
-						<li>
-							<a href="project2.html" target="iframe_a">paintings</a>
-						</li>
-						<li>
-							<a href="project2.html" target="iframe_a">drawings</a>
-						</li>
-						<li>
-							<a href="project2.html" target="iframe_a">photography</a>
-						</li>
-					</ul>
-				</nav>
-			</aside>
-		
-
-		<main>
-			<iframe  src="about.html" name="iframe_a" ></iframe>
-		</main>
-
-	</body>
-
-
+    </body>
 </html>
+
+<!-- NOTES 
+
+add lightning bugs via p5js that slowly goes towards the cursor, or interacts with cursor in some way
+create background animation in aftereffects
+
+add shooting stars
+ -->

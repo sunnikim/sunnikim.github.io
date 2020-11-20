@@ -1,0 +1,90 @@
+body{
+	background-color: black;
+	font-family: helvetica;
+	overflow: hidden;
+}
+
+.container{
+	max-height: 100vh;
+}
+
+.nav {
+	position: fixed;
+	padding: 10px;
+	width: 100vw;
+	height: 5vh;
+}
+
+.icon{
+	width: 3vh;
+	padding:0.5vh;
+}
+
+.middle{
+	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	color: white;
+  	padding: 10px;
+
+}
+
+.block{
+	color: white;
+	position: absolute;
+  	left: 50%;
+ 	 top: 50%;
+  	transform: translate(-50%, -50%);
+
+}
+
+iframe{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+button{
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	border-style: none;
+	outline: none;
+	cursor:pointer;
+}
+
+button:hover{
+	color: black;
+	transition: 5s;
+}
+
+.stars{
+	color: white;
+	display: none;
+}
+
+.stars img{
+	width: 200px;
+	display: inline;
+	position: fixed;
+}
+
+#virgo{
+	width: 200px;
+	position: fixed;
+	background: url(constellations/virgo/virgo.png);
+}
+
+.virgobackground{
+	width: 25%;
+	height: 25%;
+	background: url(constellations/virgo/virgo.svg);
+	transition: 0.5s;
+	background-repeat: no-repeat;
+}
+
+.virgobackground:hover{
+	background: url(constellations/virgo/virgo2.svg);
+	transition: 0.5s;
+	background-repeat: no-repeat;
+}
