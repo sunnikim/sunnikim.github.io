@@ -14,23 +14,48 @@
         <!-- p5.js -->
         <script src="p5.js"></script>
         <script src="p5.sound.min.js"></script>
+        <script type="text/javascript" src="quote.js"></script>
     </head>
-    <body>
-    
+    <body onload="newQuote()">
+
+
+            
+
+
         <div class="container">
-            <a class="middle">sunny kim design</a>
+
+            
+
+           
+
+
             <div class="nav">
-                <a target="frame" href="stars/index.html"><img class="icon" src="img/star.svg"></a>
-                <a target="frame" href="rain/index.html"><img class="icon" src="img/umbrella.svg"></a>
-                <a target="frame" href="clouds/index.html"><img class="icon" src="img/cloud.svg"></a>
+                <a target="frame" href="mainAssests/stars/index.html"><img class="icon" src="img/star.svg"></a>
+                <a target="frame" href="mainAssests/rain/index.html"><img class="icon" src="img/umbrella.svg"></a>
+                <a target="frame" href="mainAssests/clouds/index.html"><img class="icon" src="img/cloud.svg"></a>
                 
+                <div class="middle">
+                    <div class="dropdown">
+                      <button class="dropbtn" onclick="location.href='about.html'" type="button"><span>sunny kim design</span></button>
+                      <div class="dropdown-content">
+                        <a href="#">portfolio</a>
+                      </div>
+                    </div>
+                </div>
+
                 <div class="mute"></div>
             </div>
+
+
         	<div class="block">
-                
-                <div id="hide">
-        		  <button id="start"> Ah, finally some peace and quiet. </button>
+                <!-- <div id="hide">
+        		  <button class="button"> <span>Ah, finally some peace and quiet.</span> </button>
+                </div> -->
+
+                <div id="quotesDisplay" onclick="newQuote()">
+
                 </div>
+                
         	</div>
            <!--  <div class="stars"> -->
 <!-- 
@@ -46,7 +71,7 @@
                 <span><img src="stars2.png"></span> -->
             <!-- </div> -->
 
-            <iframe src="rain/index.html" name="frame"></iframe>
+            <iframe src="mainAssests/stars/index.html" name="frame"></iframe>
         </div>
 
         <script type="text/javascript">

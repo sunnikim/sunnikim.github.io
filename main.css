@@ -22,10 +22,10 @@ body{
 
 .middle{
 	position: absolute;
+	top: 0;
   	left: 50%;
   	transform: translateX(-50%);
   	color: white;
-  	padding: 10px;
 
 }
 
@@ -38,13 +38,17 @@ body{
 
 }
 
+#quotesDisplay{
+	cursor: pointer;
+}
+
 iframe{
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
 }
 
-button{
+.button{
 	text-decoration: none;
 	color: white;
 	background-color: rgba(0, 0, 0, 0);
@@ -53,10 +57,6 @@ button{
 	cursor:pointer;
 }
 
-button:hover{
-	color: black;
-	transition: 5s;
-}
 
 .stars{
 	color: white;
@@ -69,22 +69,50 @@ button:hover{
 	position: fixed;
 }
 
-#virgo{
-	width: 200px;
-	position: fixed;
-	background: url(constellations/virgo/virgo.png);
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  outline: none;
+  cursor:pointer;
+  font-size: 16px;
+  border: none;
 }
 
-.virgobackground{
-	width: 25%;
-	height: 25%;
-	background: url(constellations/virgo/virgo.svg);
-	transition: 0.5s;
-	background-repeat: no-repeat;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.virgobackground:hover{
-	background: url(constellations/virgo/virgo2.svg);
-	transition: 0.5s;
-	background-repeat: no-repeat;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
 }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 10px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropbtn:hover span {display: none;}
+
+.dropbtn:hover:before {
+  content:"about";
+}
+
