@@ -33,61 +33,6 @@ animation-iteration-count: infinite;
 	display: none;	
 }
 
-
-
-#finehide{
-	display: none;
-}
-
-#goodhide{
-	display: none;
-}
-
-#greathide{
-	display: none;
-}
-
-#howhide{
-	display: none;
-}
-
-#yeahide{
-	display: none;
-}
-
-#nothide{
-	display: none;
-}
-
-
-#neverhide{
-	display: none;
-}
-
-#recenthide{
-	display: none;
-}
-
-#itshide{
-	display: none;
-}
-
-#onehide{
-	display: none;
-}
-
-#twohide{
-	display: none;
-}
-
-#threehide{
-	display: none;
-}
-
-#shut{
-	display: none;
-}
-
-#last {
+.hide{
 	display: none;
 }

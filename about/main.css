@@ -7,7 +7,7 @@ body{
 	position: fixed;
 	width: 100vw;
 	height: 100vw;
-	background-color: #AAFAE4;
+	background-color: white;
 }
 
 .container{
@@ -77,14 +77,12 @@ body{
 	background-color: white;
 	text-decoration: none;
 	line-height: 1.2em;
-	display: block;
-	font-style: italic;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	border-radius: 15px;
+	display: none;
 	max-width: 30vw;
+}
 
+#first{
+	display: block;
 }
 
 .rightblock{
@@ -97,11 +95,7 @@ body{
 	background-color: white;
 	text-decoration: none;
 	display: block;
-	font-style: italic;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	border-radius: 15px;
+	  font-weight: bold;
 	max-width: 30vw;
 
 

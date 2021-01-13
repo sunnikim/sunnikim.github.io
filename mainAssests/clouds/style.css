@@ -2,4 +2,8 @@ html, body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  background: rgb(255,146,59);
+background: linear-gradient(0deg, rgba(255,146,59,1) 0%, rgba(255,189,59,1) 15%, rgba(255,234,105,1) 52%, rgba(172,245,172,1) 85%, rgba(89,255,238,1) 100%);
+
 }
+

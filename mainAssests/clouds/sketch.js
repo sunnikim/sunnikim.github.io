@@ -7,7 +7,12 @@ var lastFrame = 0;
 //lastframe is when draw was last executed
 var accumulator = 0;
 
+var c1, c2;
+
 function setup() {
+
+  // c1 = color(255, 238, 89);
+  // c2 = color(255,159,66);
 	canvas = createCanvas(windowWidth, windowHeight);
     canvas.mousePressed(startPath);
   
@@ -19,7 +24,8 @@ function setup() {
 }
 
 function draw() {
-	background(80, 180, 205);
+	background(141, 200, 215);
+  // setGradient(c1, c2);
 
   
 	for (i = 0; i < clouds.length; i++) {
@@ -68,6 +74,17 @@ function draw() {
   
   
 }
+
+// function setGradient(c1, c2) {
+//   // noprotect
+//   noFill();
+//   for (var y = 0; y < height; y++) {
+//     var inter = map(y, 0, height, 0, 1);
+//     var c = lerpColor(c1, c2, inter);
+//     stroke(c);
+//     line(0, y, width, y);
+//   }
+// }
 
 function startPath() {
   currentPath = [];
