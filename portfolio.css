@@ -18,6 +18,10 @@ body{
 	text-decoration: none;
 }
 
+.middle a:hover{
+	color: rgb(141, 200, 215);
+}
+
 .container{
 	position: absolute;
 	bottom: 0;
