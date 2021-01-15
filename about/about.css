@@ -41,6 +41,7 @@ body{
 .middle a{
   	color: black;
 	text-decoration: none;
+	font-family: 'Fraunces', serif;
 }
 
 .middle a:hover{
@@ -102,6 +103,8 @@ body{
 	line-height: 1.2em;
 	display: block;
 	max-width: 30vw;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 #first{
@@ -118,8 +121,9 @@ body{
 	background-color: white;
 	text-decoration: none;
 	display: block;
-	font-weight: bold;
+	font-weight: 500;
 	max-width: 30vw;
+	font-family: 'Roboto', sans-serif;
 
 
 }
