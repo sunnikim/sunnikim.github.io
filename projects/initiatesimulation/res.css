@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  height:100vh;
+ padding-right:30%; 
+ padding-left:30%;
+}
+
+
+
+
+.notif{
+  opacity: 1;
+  position: absolute;
+  top: 30vh;
+  z-index: 2;
+  width:40vw;
+}
+
+
+
+#response{
+  clear: both;
+  opacity: 1;
+  position: absolute;
+  top: 65vh;
+  z-index: 1;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:grey;
+}
+
+
+/*.response.animated{
+  animation: shownthree 3s ease;
+}
+
+@keyframes shownthree{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*/
+
+.gov{
+
+}
+
+.initiate{
+  float: left;
+  padding-top: 25px;
+  padding-right: 100px;
+  font-size: 1.5em;
+}
+
+.ignore{
+  float: left;
+  padding-top: 25px;
+  font-size: 1.5em;
+}
+
+
+

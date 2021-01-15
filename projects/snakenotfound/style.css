@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.NotFound{
+  	color:white;
+		text-align: center;
+  	font-family: "Helvetica", "Arial", sans-serif;
+    height:200px;
+  	width:100%;
+  	padding-top:20px;
+
+}
+
+.Cred{
+  
+  	color:#5e5e5e;
+	text-align: center;
+  	font-family: "Helvetica", "Arial", sans-serif;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:0%;
+    width:100vw;
+}
+
+
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a:link {
+    color: #777777;
+}
+
+/* visited link */
+a:visited {
+    color: #777777;
+}
+
+/* mouse over link */
+a:hover {
+    color: #8c8c8c;
+}
+
+/* selected link */
+a:active {
+    color: #8c8c8c;
+}
