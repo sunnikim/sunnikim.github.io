@@ -6,9 +6,9 @@ var quotes = [
 'i don&#8217;t want to be interesting, i wanna be interested',
 'wisdom is knowing i am nothing, love is knowing i am everything, and between the two my life moves',
 'its nothing to worry about but it definitely is sad',
-'exit the simultion, see through the spectacle',
+'exit the simulation, see through the spectacle',
 'questions you cannot answer are usually far better than answers you cannot question',
-'i&#8217;ve learn i am here to help others, what i still haven&#8217;t figure out is why the other people are here',
+'i&#8217;ve learnt i am here to help others, what i still haven&#8217;t figure out is why the other people are here',
 
 ]
 
