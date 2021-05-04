@@ -1,0 +1,63 @@
+body{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.back{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+    position: fixed;
+    margin-left: 10px;
+}
+
+.maintitle{
+    font-weight: 500;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 3em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.subtitle{
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#container{
+    width: 100vw;
+}
+.frame{
+    width: 60vw;
+    margin: auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 90vh;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width:100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+body{
+    overflow-x: hidden;
+}
