@@ -60,11 +60,20 @@ a{
     transform: translate(-50%, -50%);
 }
 
-#hyperreality:hover #rotate{
-    transform: rotate(0deg);
+#hyperreality:hover .aoffset{
+    transform: translate(100px, 0px); 
     transition: 1s;
 }
 
-#rotate{
-     transform: rotate(-90deg);
+#hyperreality:hover .boffset{
+    transform: translate(-100px, 0px); 
+    transition: 1s;
+}
+
+.aoffset{
+    transform: translate(50px, -40px); 
+}
+
+.boffset{
+    transform: translate(-50px, 40px); 
 }
