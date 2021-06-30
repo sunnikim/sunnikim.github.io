@@ -1,0 +1,75 @@
+.firsttext p{
+    text-align: center;
+    padding-bottom: 45vh;
+    font-size: 2em;
+    color: white;
+
+}
+
+.firsttext p:first-of-type {
+    padding-top: 45vh;
+}
+
+.secondtext p{
+    text-align: center;
+    padding-bottom: 45vh;
+    font-size: 2em;
+
+}
+
+.secondtext p:first-of-type {
+    padding-top: 45vh;
+}
+
+.top{
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 90%);
+    pointer-events: none;
+
+}
+
+.bottom{
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 90%);
+    pointer-events: none;
+
+}
+
+.firsttext .top{
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 90%);
+    pointer-events: none;
+
+}
+
+.firsttext .bottom{
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 90%);
+    pointer-events: none;
+
+}
+
+.firsttext a{
+    color: white;
+}
+
+a{
+    color: black;
+}
+

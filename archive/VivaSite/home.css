@@ -1,0 +1,79 @@
+body{
+   font-family: 'Cormorant Garamond', serif;
+   font-weight: 500;
+   font-size: 80px;
+}
+
+
+
+
+.float{
+    float:left;
+}
+.right{
+    float:right;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#lineheight{
+    padding-bottom: 27vh;
+}
+
+
+#frameworks:hover .flipped{
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+.flipped{
+    transform: scaleX(-1);
+}
+
+#meaning{
+    bottom:5px;
+}
+
+.offset{
+    transform: translateY(-20px); 
+
+}
+
+#meaning:hover .offset{
+    transform: translateY(0px); 
+    transition: 1s;
+}
+
+.space:before{
+    content:" "; 
+    display:inline-block; 
+    width:60px;
+}
+
+#hyperreality{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hyperreality:hover .aoffset{
+    transform: translate(100px, 0px); 
+    transition: 1s;
+}
+
+#hyperreality:hover .boffset{
+    transform: translate(-100px, 0px); 
+    transition: 1s;
+}
+
+.aoffset{
+    transform: translate(50px, -40px); 
+}
+
+.boffset{
+    transform: translate(-50px, 40px); 
+}

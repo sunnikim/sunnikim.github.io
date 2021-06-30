@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://gemcopeland.github.io/html-template.html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- a container for metadata -->
+        <!--charset: character encoding capable of encoding all characters on the web  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
+        <title>let's talk about talking</title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
+        <meta name="description" content=""><!--keywords/snippet for search engines-->
+        <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="animation.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="fade.js"></script> -->
+        <script src="scroll.js"></script>
+        <!-- p5.js -->
+        <script src="p5.js"></script>
+        <script src="p5.sound.min.js"></script>
+    </head>
+    <body>
+        <div id="background" style="background-color:#B8D6F4;"></div>
+    
+        <div class="container">
+            <div class="middle">let's talk about talking</div>
+        	<div class="block" id="scroll">
+
+         <!--        <p class="leftblock"></p>
+                <p class="rightblock"></p>   -->
+
+
+               <p class="leftblock"> hi! how are you?  </p>
+               <p class="rightblock"> fine </p>
+               <p class="rightblock"> how about you? </p>
+               <p class="leftblock"> good! thanks for asking   </p>
+               <p class="leftblock"> so  </p>
+               <p class="leftblock"> do you want to talk about talking?  </p>
+               <p class="rightblock"> yea sure! </p>
+               <p class="leftblock"> great! </p>
+               <p class="leftblock"> When was the last time you had a meaningful conversation? </p>
+               <p class="rightblock"> it's been a while </p>
+               <p class="leftblock"> I think its important to have meaningful conversations </p>
+               <p class="leftblock"> do you think you're a good conversation partner?  </p>
+               <p class="rightblock"> not really </p>
+               <p class="leftblock"> yea, me neither  </p>
+               <p class="leftblock"> do you ever rehearse what you're going to say so much that you forget to listen to the other person? </p>
+               <p class="rightblock">all the time</p>
+               <p class="leftblock"> well, that happens to me a lot  </p>
+               <p class="leftblock"> but I realised that if I just listen for the sake of listening, rather than listen for the sake of replying, my responses become spontaneous and more genuine  </p>
+               <p class="rightblock">listening for the sake of listening?</p>
+               <p class="leftblock"> thats right, its hard to stay focused and pay attention sometimes but I think people realise when they are really being heard </p>
+               <p class="rightblock"> right </p>
+               <p class="leftblock" id="fade"> yea, and they start to open up. I don’t even really have to say much  </p>
+               <p class="leftblock" id="fade2"> even during awkward pauses  </p>
+               <p class="leftblock" id="fade3"> I think theres a tendency to try and fill that empty space in the air  </p>
+               <p class="leftblock" id="fade4"> but silence provides a break  </p>
+               <p class="leftblock" id="fade5"> it helps people gather their thoughts and encourages them to continue speaking  </p>
+               <p class="leftblock" id="fadeout"> <span class="loading">. . .</span></p>
+               
+
+               
+              
+
+
+        	</div>
+           
+            <div class="response">
+                <div class="dropupcontainer">
+                    <span class="blink">|</span>
+                    <div class="dropupcontent">
+                        <div id="shut">
+                        <a href="11323111.html" id="one"> 
+                        So I just need to shut up? 
+                        </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+                 setTimeout(function(){
+                        $('#fade').fadeIn("15");
+                    }, 2000);
+                setTimeout(function(){
+                        $('#fade2').fadeIn("15");
+                    }, 6000);
+                setTimeout(function(){
+                        $('#fade3').fadeIn("15");
+                    }, 10000);
+                setTimeout(function(){
+                        $('#fade4').fadeIn("15");
+                    }, 20000);
+                setTimeout(function(){
+                        $('#fade5').fadeIn("15");
+                        $('#shut').fadeIn("15");
+                        $('#fadeout').fadeOut("0");
+                    }, 24000);
+
+                $("#one").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#onehide').fadeIn("15");
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 3000);
+                });
+
+                $("#two").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#twohide').fadeIn("15");
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 3000);
+                });
+
+                $("#three").click(function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('#threehide').fadeIn("15");
+                       setTimeout(function(){
+                           window.location = href;  
+                    }, 3000);
+                });
+
+                // $("#great").click(function(e) {
+                //     e.preventDefault();
+                //     var href = $(this).attr('href');
+                //     $('#greathide').fadeIn("15");
+                //        setTimeout(function(){
+                //             $('#howhide').fadeIn("15"); 
+                //     }, 1000);
+                //        setTimeout(function(){
+                //            window.location = href;  
+                //     }, 3000);
+                // });
+
+            </script>
+           
+        </div>
+
+       
+
+    </body>
+</html>

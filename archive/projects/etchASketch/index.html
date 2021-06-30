@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <style>
+        .squares{
+            background-color: black;
+            
+        }
+
+        #container {
+            display: grid;
+            
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">clear</button>
+    <div id='container'>
+        
+
+    </div>
+
+    <script>
+
+
+//set initial values 
+const sideWidth = 800;
+let sideLength = 20;
+let squareSize = sideWidth/sideLength;
+
+function createSquare() {
+    let container = document.getElementById('container'); //get container
+    let square = document.createElement('div'); //create div
+    square.classList.add('squares'); //add squares class to div
+    square.setAttribute('style', `width: ${squareSize}px; height: ${squareSize}px;`); //add width and height class style to div
+    container.appendChild(square);  
+}
+    
+function constructor(){
+    for (let i = 0; i < sideLength; i++) {
+        for (let j = 0; j < sideLength; j++) {
+            createSquare();
+        }
+    }
+}
+
+function colorIn(){
+    const squareList = document.querySelectorAll('.squares');
+
+    squareList.forEach(squareList => {
+            squareList.addEventListener("mouseenter", function (event) {
+                    // highlight the mouseenter target
+                event.target.style.backgroundColor = "grey";
+            }, false);
+        });
+    }
+
+defineGrid =  container.setAttribute('style', `grid: auto-flow / repeat(${sideLength}, ${squareSize}px);`) //add grid class to container
+
+
+const btn = document.querySelector('#btn');
+    btn.addEventListener('click', () => {
+        sideLength = prompt('Hello World', '');
+    });
+
+
+constructor();
+colorIn();
+
+
+        
+
+    </script>
+</body>
+</html>
