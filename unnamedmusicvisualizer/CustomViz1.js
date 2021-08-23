@@ -17,7 +17,7 @@ let colourSlider;
 function setup() {
     colorMode(HSB)
     createCanvas(400,600)
-    song = loadSound('empty.mp3', loaded)
+    song = loadSound('pianopiece.mp3', loaded)
         
     mic = new p5.AudioIn();
     mic.start();
@@ -65,7 +65,7 @@ function draw() {
     // start += incr
 
 
-    let level = mic.getLevel();
+    let level = amplitude.getLevel();
 
     let spacing = spacingSlider.value()
     let skewOffset = skewSlider.value()
