@@ -244,6 +244,16 @@ section.hero{
     width: 30vw;
 }
 
+.work-image-caption{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+
+.work-image-caption i{
+    font-size: 0.5rem;
+}
+
 .work-image img{
     width: 100%;
 }
@@ -256,6 +266,33 @@ section.hero{
     font-size: 5vh;
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+/* CV */
+
+.cv-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cv-wrapper{
+    width: 40vw;
+    line-height: 1.5rem;
+}
+
+.cv-wrapper h1{
+    font-size: 1.2rem;
+}
+.cv-wrapper h2{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.cv-wrapper h3{
+    font-weight: 200;
+    margin-left: 40px;
 }
 
 /* CONTACT */
@@ -286,4 +323,52 @@ footer{
     overflow: hidden;
     text-align: center;
     padding: 15px;
+}
+
+/* SUZUKI */
+
+.note{
+    display: inline;
+    font-size: 20vh;
+}
+
+.tap{
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width:1px;
+    color:white;
+    font-weight:900;
+    cursor: pointer;
+}
+
+.tap:hover{
+
+    color:black;
+    font-weight:900;
+    cursor: pointer;
+}
+
+.tapped{
+    color:black;
+}
+
+.note-alert{
+    color: grey;
+}
+
+.note-alert-pressed{
+    display: none;
+    color: white;
+}
+
+.cover-letter{
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-letter p{
+    font-size: 1.5rem;
+    width: 60vw;
 }
