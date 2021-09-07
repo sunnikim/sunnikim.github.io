@@ -230,6 +230,34 @@ section.hero{
     align-content: space-around;
 }
 
+/* WORK */
+
+.work{
+    padding-top: 1vh;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10vh;
+}
+
+.work-image{
+    width: 30vw;
+}
+
+.work-image img{
+    width: 100%;
+}
+
+.work-image video{
+    width: 100%;
+}
+
+.work-title{
+    font-size: 5vh;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 /* CONTACT */
 
 section.contact{
