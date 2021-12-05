@@ -46,7 +46,6 @@ classList.forEach(element => {
                }
            },
            scrollTrigger: {
-               markers: true,
                start: "start start",
                trigger: imageChild[i],
                scrub: 0.3,
