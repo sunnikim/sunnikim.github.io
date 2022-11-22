@@ -493,6 +493,8 @@ textarea {
     margin-bottom: 20px;
     outline: none;
     border: none;
+    overflow: scroll;
+    font-size: 14px;
 }
 
 .terms-consent{
