@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blue Horse 0.0</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="main-container">
+            <img
+                class="background-image"
+                src="media/horse2.png"
+                alt=""
+                srcset=""
+            />
+            <header class="header-container">
+                <a href="main.html"><h1 class="header-logo">BLUE <br> HORSE</h1></a>
+                <div class="page-number-container">
+                    <div class="page-number"><span class="page-number-text">1</span></div>
+                    <div class="page-number"><span class="page-number-text">2</span></div>
+                    <div class="page-number current-page-number"><span class="page-number-text">3</span></div>
+                    <div class="page-number"><span class="page-number-text">4</span></div>
+                    <div class="page-number"><span class="page-number-text">5</span></div>
+                </div>
+            </header>
+            
+            <div class="content-container content-centered">
+                <form class="upload">
+                    <div class="form-inner upload-input-file-container">
+                        <div class="upload-input-file-overlay full-width-button">
+                            CHOOSE FILE
+                        </div>
+                        <input
+                            class="upload-input-file full-width-button"
+                            type="file"
+                            id="upload"
+                            name="upload"
+                            accept="image/png, image/jpeg"
+                        />
+                    </div>
+                    <div class="form-inner upload-input-file-container">
+                        <div class="upload-input-file-overlay full-width-button">
+                            OPEN CAMERA
+                        </div>
+                        <input
+                            capture="environment"
+                            class="upload-input-file full-width-button"
+                            type="file"
+                            id="cameraUpload"
+                            name="cameraUpload"
+                            accept="image/png, image/jpeg"
+                        />
+                    </div>
+                    <div class="form-inner">
+                        <div class="photo-preview-container">
+                            <div>PREVIEW</div> 
+                            <img class="photo-preview-image hide" src="media/photo.jpg">
+                            <div class="caption-text fully-centered upload-progress">NO PHOTO</div>
+                        </div>
+                    </div>
+                    <div class="form-inner">
+                        <a id="location-finder" href="#" class="full-width-button">ADD LOCATION</a>
+                        <div id="location-status" class="inline-message"></div>
+                        <div id="location-link" class="inline-message"></div>
+                    </div>
+                    <div class="form-inner">
+                        <button disabled type="submit" class="full-width-button upload-button">UPLOAD PHOTO</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-container">
+                <div class="center-column">
+                    <a class="full-width-button required-button hide" href="thankyou.html"> NEXT </a>
+                </div>
+            </div>
+        </section>
+        <script src="bundle.js"></script>
+    </body>
+</html>
