@@ -213,7 +213,7 @@ textarea {
     width: 100vw;
     border-radius: var(--border-radius);
     outline: 1px #dbd5c0 solid;
-    outline-offset: -3px;
+    outline-offset: -1px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -410,6 +410,10 @@ textarea {
     justify-content: space-between;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 .center-column{
     padding: 25px;
     width: 100%;
@@ -448,6 +452,7 @@ textarea {
 }
 
 .inline-message{
+    margin-top: 5px;
     width: 90%;
     height: 30px;
     display:flex;
